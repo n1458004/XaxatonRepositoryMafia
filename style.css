@@ -1,5 +1,5 @@
-body {
-  background: var(--tg-theme-bg-color);
+#body {
+  background-color: var(--tg-theme-bg-color);
 }
 #name {
   color: var(--tg-theme-text-color);
