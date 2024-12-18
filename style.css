@@ -1,7 +1,7 @@
 #body {
   background-color: var(--tg-theme-bg-color);
 }
-.role_h {
+#header_name {
   color: var(--tg-theme-text-color);
 }
 #mafia_header {
