@@ -1,6 +1,15 @@
 #body {
   background-color: var(--tg-theme-bg-color);
 }
-#name {
+.role_h {
   color: var(--tg-theme-text-color);
+}
+#mafia_header {
+  color: var(--tg-theme-destructive-text-color);
+}
+#mafia_header {
+  color: var(--tg-theme-destructive-text-color);
+}
+#mirn_header {
+  color: var(--tg-theme-accent-text-color);
 }
