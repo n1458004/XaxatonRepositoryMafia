@@ -2,7 +2,7 @@
   <head>
     <title>You role</title>
     <script>
-      if (window.location.search.startsWith('?view')) {
+      if (window.self !== window.top) {
         var script = document.createElement('script');
         script.type = 'text/javascript';
         script.src = 'https://telegram.org/js/telegram-web-app.js?56';
