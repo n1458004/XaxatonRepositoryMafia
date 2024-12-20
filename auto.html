@@ -24,10 +24,9 @@
 	  header.style = "color: "+header.style.color+";background-color: "+header.style.backgroundColor+";"
 	  header.innerHTML = "<h2 id='name' style='" + "color: "+header.style.color+";background-color: "+header.style.backgroundColor+";" + "'><center>"+params.get('name')+"</center></h2>";
 	  document.body.appendChild(header);
-	console.Log(params.get('page_bgcolor'));
-	    console.Log(params.get('head_color_using'));
+	console.debug(params);
       body.style.backgroundColor = params.get('page_bgcolor');
-      description.innerHTML = "<center>"+params.get('description')+"</center>";;
+      description.innerHTML = "<center>"+params.get('description')+"</center>";
       description.style.color = params.get('description_color');
 	__header_title_main__.style.color = params.get('head_color_using');
 	  body.style.visibility = "visible";
