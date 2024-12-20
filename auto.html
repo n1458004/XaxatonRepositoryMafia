@@ -11,7 +11,7 @@
       }
     </script>
   </head>
-  <body id="body" style="background-color: var(--tg-theme-text-color);visibility: hidden;" >
+  <body style="background-color: var(--tg-theme-text-color);visibility: hidden;" ><div id="body" style="width:100%;height:100%">
       <h1 style="color: var(--tg-theme-bg-color);" id="__header_title_main__"><center>Ваша роль</center></h1>
       <h2 style="color: green;background-color: black;" hidden><center>Доктор</center></h2>
       <div style="overflow: hidden;position: fixed;bottom: 0;width: 100%;margin: 0;padding: 0;border: 0px;margin-bottom: 10px;">
@@ -33,5 +33,6 @@
 	__header_title_main__.innerHTML = "<center>" + params.get('head_text_using') + "</center>";
 	  body.style.visibility = "visible";
     </script>
+   </div>
   </body>
 </html>
