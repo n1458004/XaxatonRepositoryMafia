@@ -11,7 +11,7 @@
     </script>
   </head>
   <body id="body" style="background-color: var(--tg-theme-text-color);visibility: hidden;" >
-      <h1 style="color: var(--tg-theme-bg-color);" id="header_title"><center>Ваша роль</center></h1>
+      <h1 style="color: var(--tg-theme-bg-color);" id="__header_title_main__"><center>Ваша роль</center></h1>
       <h2 style="color: green;background-color: black;" hidden><center>Доктор</center></h2>
       <div style="overflow: hidden;position: fixed;bottom: 0;width: 100%;margin: 0;padding: 0;border: 0px;margin-bottom: 10px;">
         <h3 id="description" style="position: static;color: var(--tg-theme-subtitle-text-color);font-size: 1.05em;margin: 0em;border: 0px;margin-right: 15px;"><center style="margin: 0px;border: 0px;padding: 5px;">Вы мирный житель. Но можете лечить других игроков, если их ранят.</center></h3>
@@ -27,7 +27,7 @@
       body.style.backgroundColor = params.get('page_bgcolor');
       description.innerHTML = "<center>"+params.get('description')+"</center>";;
       description.style.color = params.get('description_color');
-	header_title.style.color = params.get('head_color_using');
+	__header_title_main__.style.color = params.get('head_color_using');
 	  body.style.visibility = "visible";
     </script>
   </body>
