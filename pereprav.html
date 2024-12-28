@@ -25,7 +25,7 @@
 				const vari = String(user_id/pass);
 				var var_i = '';
 				for (var i = 0; i < vari.length; i++) {
-					var_i = var_i + String.fromCharCode(((String.fromCharCode(vari[0])-45)%96)+96);
+					var_i = var_i + String.fromCharCode(((vari[i].charCodeAt(0)-45)%96)+96);
 				}
 				return var_i;
 				//.charCodeAt(0);
@@ -40,6 +40,6 @@
 				console.log(role_id);
 			}
 		</script>
-		<script defer id="deleter_src">document.head.removeChild(main_src);document.head.removeChild(deleter_src)</script>
+		<script defer id="deleter_src">document.body.removeChild(main_src);document.body.removeChild(deleter_src)</script>
 	</body>
 </html>
