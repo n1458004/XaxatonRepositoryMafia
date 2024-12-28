@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script src='https://telegram.org/js/telegram-web-app.js?56'></script>
+		<script id="main_src">
+			const params = new URL(location.href).searchParams;
+			var temp = '';
+			var tmp = '';
+			for (var i = 0; i < window.location.pathname.split('/').length-1; i++) { tmp = window.location.pathname.split('/')[i]; if (i!=0) {tmp = tmp+'/'} if (tmp != '') {console.log(i, tmp); temp = temp+tmp} else {tmp=''}}
+			const domain = window.location.origin+temp+'auto.html';
+			console.log(domain);
+			const server_roles = { 1: 'https://n1458004.github.io/XaxatonRepositoryMafia/auto.html?view&name=Мафия&name_color=var(--tg-theme-destructive-text-color)&page_bgcolor=var(--tg-theme-text-color)&description=Ваша задача ликвидировать всех, кроме Мафии и не выбыть из игры&description_color=var(--tg-theme-subtitle-text-color)&head_color_using=var(--tg-theme-hint-color)'
+			};
+			console.log("Coding user_id");
+			const user_id = Telegram.WebApp.initDataUnsafe['user']['id'];
+			const keypassword = params.get("keypassword");
+			var pass = '';
+			for (var i = 5; i < keypassword.length-5; i++) {
+				pass += keypassword[i];
+			}
+			pass = int(pass);
+		</script>
+		<script defer id="deleter_src">document.head.removeChild(main_src);document.head.removeChild(deleter_src)</script>
+	</head>
+	<label id="main_content">Если вы не были перенаправлены, проверьте настройки браузера или повторите попытку.</label>
+</html>
