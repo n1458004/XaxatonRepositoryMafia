@@ -1,5 +1,8 @@
 <html>
 	<head>
+	</head>
+	<body>
+		<label id="main_content">Если вы не были перенаправлены, проверьте настройки браузера или повторите попытку.</label>
 		<script src='https://telegram.org/js/telegram-web-app.js?56'></script>
 		<script defer id="main_src">
 			const params = new URL(location.href).searchParams;
@@ -20,14 +23,14 @@
 			pass = Number(pass);
 			function hash(user_id, keypassword) {
 				const vari = String(user_id/pass);
-				var var_i;
+				var var_i = '';
 				for (var i = 0; i < vari.length; i++) {
 					var_i = var_i + String.fromCharCode(((String.fromCharCode(vari[0])-45)%96)+96);
 				}
 				return var_i;
 				//.charCodeAt(0);
 			}
-			const hex_user = hash(user_id, keypassword);
+			const hex_user = hash(user_id, pass);
 			const id_role = params.get(hex_user);
 			if (id_role == undefined) {
 				main_content.innerHTML = 'Error for decoding user info; Check your game, use brower or check wi-fi connection;';
@@ -38,6 +41,5 @@
 			}
 		</script>
 		<script defer id="deleter_src">document.head.removeChild(main_src);document.head.removeChild(deleter_src)</script>
-	</head>
-	<label id="main_content">Если вы не были перенаправлены, проверьте настройки браузера или повторите попытку.</label>
+	</body>
 </html>
