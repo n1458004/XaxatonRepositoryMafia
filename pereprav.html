@@ -9,7 +9,7 @@
 			var temp = '';
 			var tmp = '';
 			for (var i = 0; i < window.location.pathname.split('/').length-1; i++) { tmp = window.location.pathname.split('/')[i]; if (i!=0) {tmp = tmp+'/'} if (tmp != '') {console.log(i, tmp); temp = temp+tmp} else {tmp=''}}
-			const domain = window.location.origin+temp+'auto.html';
+			const domain = window.location.origin+'/'+temp+'auto.html';
 			console.log(domain);
 			const server_roles = { 1: 'view&name=Мафия&name_color=var(--tg-theme-destructive-text-color)&page_bgcolor=var(--tg-theme-text-color)&description=Ваша задача ликвидировать всех, кроме Мафии и не выбыть из игры&description_color=var(--tg-theme-subtitle-text-color)&head_color_using=var(--tg-theme-hint-color)'
 			};
